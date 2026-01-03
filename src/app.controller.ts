@@ -16,4 +16,9 @@ export class AppController {
       this.appService.logMessage2();
       return 'Message2 sent!';
    }
+
+   @Get('call-worker')
+   callWorker() {
+      this.appService.callWorker();
+   }
 }
